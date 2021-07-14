@@ -1,0 +1,23 @@
+.banner {
+  &-content {
+    background-image: url(./../../../../assets/images/posters_1000x1000.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    &-info {
+      max-width: 45%;
+
+      h2 {
+        font-size: 36px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.product-list {
+  &-title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}

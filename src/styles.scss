@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'assets/font-awesome/scss/fontawesome.scss';
+@import 'assets/font-awesome/scss/solid.scss';
+@import 'assets/font-awesome/scss/brands.scss';
+@import './assets/scss/index.scss';
+
+:root {
+  --primary-color: #d77e6a;
+}
+
+html, body {
+  font-family: 'dancing-script';
+  font-weight: 400;
+  letter-spacing: 1.75px;
+}

@@ -1,0 +1,22 @@
+<div class="card" *ngIf="product">
+  <a class="card-image flex" href="">
+    <img
+      [src]="
+        product.image ||
+        './../../../../../assets/images/product-image-detault.png'
+      "
+      alt="product image"
+      class="object-cover"
+    />
+  </a>
+  <div class="card-detail mt-4">
+    <a href="" class="card-detail-name">{{product.name}}</a>
+    <p class="card-detail-price mt-4" [class.discount]="product.discount">
+      <span>${{product.price | number: '0.2-2'}}</span>
+      <span *ngIf="product.discount" class="ml-3">${{product.discount | number: '0.2-2'}}</span>
+    </p>
+  </div>
+  <div class="tags" *ngIf="product.discount">
+    <span>Sale</span>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+$color-primary: #d77e6a;
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-primary-hover: #e2a192;
+$color-success-hover: #218838;
+$color-danger-hover: #c82333;
+
+@mixin btn-color($color, $hover-color) {
+  background-color: $color;
+  border-color: $color;
+
+  &:hover {
+    background-color: $hover-color;
+    border-color: $hover-color;
+  }
+}
+
+.btn {
+  min-width: 70px;
+  display: inline-block;
+  color: #fff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  cursor: pointer;
+  letter-spacing: 2.5px;
+
+  &.btn-primary {
+    @include btn-color($color-primary, $color-primary-hover);;
+    color: #fff;
+  }
+
+  &.btn-success {
+    @include btn-color($color-success, $color-success-hover);;
+    color: #fff;
+  }
+
+  &.btn-danger {
+    @include btn-color($color-danger, $color-danger-hover);;
+    color: #fff;
+  }
+}
