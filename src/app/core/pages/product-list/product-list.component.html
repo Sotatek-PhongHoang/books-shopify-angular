@@ -1,0 +1,31 @@
+<div class="products">
+  <app-header></app-header>
+
+  <section class="py-10">
+    <div class="container">
+      <div class="flex justify-between items-center mb-5">
+        <h2 class="page-title">Product list</h2>
+        <form action="" class="flex">
+          <div class="flex items-center">
+            <p class="mr-3">Category</p>
+            <select name="" id="">
+              <option value="default">All</option>
+            </select>
+          </div>
+          <div class="flex items-center ml-4">
+            <p class="mr-3">Sort by</p>
+            <select name="" id="">
+              <option value="default">None</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <app-product-list
+        *ngIf="products"
+        [products]="products"
+      ></app-product-list>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+</div>

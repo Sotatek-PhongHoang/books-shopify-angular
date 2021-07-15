@@ -22,14 +22,14 @@
   <div class="header-content">
     <div class="container">
       <div class="flex justify-between items-center h-32">
-        <a [routerLink]="['/']">
+        <a [routerLink]="['home']">
           <img src="assets/images/logo.png" alt="logo">
         </a>
 
         <nav class="header-menu">
           <ul class="flex">
-            <li><a [routerLink]="['/']">Home</a></li>
-            <li><a href="">Prints</a></li>
+            <li><a [routerLink]="['/home']" [routerLinkActive]="'active'">Home</a></li>
+            <li><a [routerLink]="['/products']" [routerLinkActive]="'active'">Books</a></li>
             <li><a href="">Cards</a></li>
             <li><a href="">Notebooks</a></li>
           </ul>

@@ -6,7 +6,8 @@
       text-transform: uppercase;
       font-weight: 700;
 
-      &:hover {
+      &:hover,
+      .active {
         color: #d77e6a;
       }
     }
